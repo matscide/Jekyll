@@ -1,22 +1,16 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    {% include header.html %}
-  </head>
-  <body>
-    {% include skippy.html %}
+---
+layout: blank
+---
 
-    {% include docs-navbar.html %}
+<body>
 
-    {% if page.layout == "simple" or page.layout == "examples" %}
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
       {{ content }}
-    {% else %}
-      <main id="content" role="main">
-        {{ content }}
-      </main>
-    {% endif %}
+    </div>
+    {% include retina-image.html %}
+  </main>
 
-    {% include footer.html %}
-    {% include scripts.html %}
-  </body>
-</html>
+  {% include footer.html %}
+
+</body>

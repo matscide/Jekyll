@@ -1,171 +1,176 @@
-<p align="center">
-  <a href="https://getbootstrap.com/">
-    <img src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width=72 height=72>
-  </a>
+# Kagami
 
-  <h3 align="center">Bootstrap</h3>
+[![Build Status](https://travis-ci.org/kamikat/jekyll-theme-kagami.svg?branch=master)](https://travis-ci.org/kamikat/jekyll-theme-kagami)
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-kagami.svg)](https://badge.fury.io/rb/jekyll-theme-kagami)
 
-  <p align="center">
-    Sleek, intuitive, and powerful front-end framework for faster and easier web development.
-    <br>
-    <a href="https://getbootstrap.com/docs/4.0/"><strong>Explore Bootstrap docs »</strong></a>
-    <br>
-    <br>
-    <a href="https://github.com/twbs/bootstrap/issues/new?template=bug.md">Report bug</a>
-    ·
-    <a href="https://github.com/twbs/bootstrap/issues/new?template=feature.md&labels=feature">Request feature</a>
-    ·
-    <a href="https://themes.getbootstrap.com/">Themes</a>
-    ·
-    <a href="https://jobs.getbootstrap.com/">Jobs</a>
-    ·
-    <a href="https://blog.getbootstrap.com/">Blog</a>
-  </p>
-</p>
+A peaceful theme for Jekyll and GitHub Pages.
 
-<br>
+![Screenshot](https://s2.banana.moe/docs/kagami-preview@2x.png)
 
-## Table of contents
+## Installation
 
-- [Quick start](#quick-start)
-- [Status](#status)
-- [What's included](#whats-included)
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [Community](#community)
-- [Versioning](#versioning)
-- [Creators](#creators)
-- [Copyright and license](#copyright-and-license)
+Add this line to your Jekyll site's Gemfile:
 
-## Quick start
-
-Several quick start options are available:
-
-- [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.1.0.zip)
-- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
-- Install with [npm](https://www.npmjs.com/): `npm install bootstrap`
-- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@4.1.0`
-- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:4.1.0`
-- Install with [NuGet](https://www.nuget.org/): CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`
-
-Read the [Getting started page](https://getbootstrap.com/docs/4.0/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
-
-## Status
-
-[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com/)
-[![Build Status](https://img.shields.io/travis/twbs/bootstrap/v4-dev.svg)](https://travis-ci.org/twbs/bootstrap)
-[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
-[![Gem version](https://img.shields.io/gem/v/bootstrap.svg)](https://rubygems.org/gems/bootstrap)
-[![Meteor Atmosphere](https://img.shields.io/badge/meteor-twbs%3Abootstrap-blue.svg)](https://atmospherejs.com/twbs/bootstrap)
-[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap.svg)](https://packagist.org/packages/twbs/bootstrap)
-[![NuGet](https://img.shields.io/nuget/vpre/bootstrap.svg)](https://www.nuget.org/packages/bootstrap/absoluteLatest)
-[![peerDependencies Status](https://img.shields.io/david/peer/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap?type=peer)
-[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap?type=dev)
-[![CSS gzip size](http://img.badgesize.io/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/css/bootstrap.min.css)
-[![JS gzip size](http://img.badgesize.io/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/js/bootstrap.min.js)
-
-[![Sauce Labs Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
-
-## What's included
-
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
-
-```
-bootstrap/
-├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
-│   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── bootstrap-grid.css
-│   ├── bootstrap-grid.css.map
-│   ├── bootstrap-grid.min.css
-│   ├── bootstrap-grid.min.css.map
-│   ├── bootstrap-reboot.css
-│   ├── bootstrap-reboot.css.map
-│   ├── bootstrap-reboot.min.css
-│   └── bootstrap-reboot.min.css.map
-└── js/
-    ├── bootstrap.bundle.js
-    ├── bootstrap.bundle.min.js
-    ├── bootstrap.js
-    └── bootstrap.min.js
+```ruby
+gem "jekyll-theme-kagami"
 ```
 
-We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
+And add this line to your Jekyll site's `_config.yml`:
 
+```yaml
+theme: jekyll-theme-kagami
+```
 
-## Bugs and feature requests
+And then execute:
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
+    $ bundle
 
+Or install it yourself as:
 
-## Documentation
+    $ gem install jekyll-theme-kagami
 
-Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
+### GitHub Pages
 
-Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in the `_scripts.html` include.
+Jekyll build is integrated with GitHub Pages with limited function. This section is intended for those who
+want to use the theme with GitHub Pages hosted sites.
 
-### Running documentation locally
+1. Download latest gem file from https://rubygems.org/gems/jekyll-theme-kagami
+2. Run `gem unpack [path-to-downloaded-gem-file] --target=.` on jekyll site project folder
+3. Delete the line `theme: ...` in `_config.yml`
 
-1. Run through the [tooling setup](https://getbootstrap.com/docs/4.0/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
-2. Run `npm install` to install Node.js dependencies.
-3. Run `npm run test` (or a specific NPM script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
-4. From the root `/bootstrap` directory, run `npm run docs-serve` in the command line.
-5. Open `http://localhost:9001` in your browser, and voilà.
+Zip archive downloaded from release page may not work because GitHub does not pack necessary files from submodules.
 
-Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
+Instruction 1 and 2 can also work when you decide to upgrade your installation.
 
-### Documentation for previous releases
+## Usage
 
-- For v2.3.2: <https://getbootstrap.com/2.3.2/>
-- For v3.3.x: <https://getbootstrap.com/docs/3.3/>
+### Social account links
 
-[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
+You can customize social account links by adding following lines to `_config.yml`
 
+```yaml
+github_username: my_github_username
+twitter_username: my_twitter_username
+instagram_username: my_instagram_username
+```
+
+You can customize footer by overriding `_includes/footer.html`.
+
+### Syntax highlighting
+
+Kagami support color schemes from [jekyll-pygments-themes](https://github.com/jwarby/jekyll-pygments-themes).
+
+Add the following lines to choose a color scheme:
+
+```yaml
+color_scheme: github
+```
+
+### Enabling comments (via Disqus)
+
+Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
+
+To enable it, add the following lines to your Jekyll site:
+
+```yaml
+disqus_shortname: my_disqus_shortname
+```
+
+You can find out more about Disqus' shortnames [here](https://help.disqus.com/customer/portal/articles/466208).
+
+Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`
+
+If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
+
+### Enabling Google Analytics
+
+To enable Google Anaytics, add the following lines to your Jekyll site:
+
+```yaml
+google_analytics: UA-NNNNNNNN-N
+```
+
+Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
+
+### Navigation
+
+Pages and posts can be listed as navigation item in header of pages. Add following frontmatter will make it
+
+```yaml
+navlevel: header
+navtitle: Awesome Title # optional, specifies the text to display on navigation item
+```
+
+Navigation items are ordered in alphabetical order by default in Jekyll. While you can adjust the order manually using
+
+```yaml
+position: 999
+```
+
+### Tags and category
+
+Layout file `post-list` supports filters by tag or category. Create pages with following frontmatter will generate a filtered post list.
+
+```yaml
+title: Title of Tag Page
+layout: post-list
+filter:
+  - by_tag: tagname
+```
+
+To filter by both category and tags:
+
+```yaml
+filter:
+  - by_tag: tagname
+    by_category: category
+```
+
+Results from multiple filters are combined (logical 'or') into the result.
+
+A more flexible filter strategy is supported by supplying liquid expression to `by_expression` parameter in which post object can be referenced by the name `post`.
+
+### Enabling MathJax
+
+You can use MathJax with Kramdown's [built-in support](https://kramdown.gettalong.org/syntax.html#math-blocks).
+
+To enable [MathJax](https://www.mathjax.org/), add following lines to your site
+or post's front matter stuff:
+
+```yaml
+mathjax: true
+```
+
+### Use `.side-note` and `.retina2x`
+
+Taking advantages of [Block/span IAL](https://kramdown.gettalong.org/syntax.html#block-ials),
+Kagami supports extra elements in writing.
+
+Add `{:.side-note}` notation after a paragraph (in a new line just after paragraph WITHOUT extra line breaks)
+will style the paragraph as a sidenote. Sidenote will be pull to the left of
+the page and only be visible in desktop mode.
+
+Kagami is also optimized for high-res image display:
+
+```markdown
+![image@2x](path-to-image@2x.png){:.retina2x}
+```
+
+And the retina image will be scaled to half of it's original size in pixels.
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/kamikat/jekyll-theme-kagami>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-Moreover, if your pull request contains JavaScript patches or features, you must include [relevant unit tests](https://github.com/twbs/bootstrap/tree/master/js/tests). All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
+## Development
 
-Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org/>.
+To set up your environment to develop this theme, run `bundle install`.
 
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-## Community
+When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
 
-Get updates on Bootstrap's development and chat with the project maintainers and community members.
+## License
 
-- Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
-- Read and subscribe to [The Official Bootstrap Blog](https://blog.getbootstrap.com/).
-- Join [the official Slack room](https://bootstrap-slack.herokuapp.com/).
-- Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.
-- Implementation help may be found at Stack Overflow (tagged [`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4)).
-- Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
+The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-
-## Versioning
-
-For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
-
-See [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](https://blog.getbootstrap.com/) contain summaries of the most noteworthy changes made in each release.
-
-
-## Creators
-
-**Mark Otto**
-
-- <https://twitter.com/mdo>
-- <https://github.com/mdo>
-
-**Jacob Thornton**
-
-- <https://twitter.com/fat>
-- <https://github.com/fat>
-
-
-## Copyright and license
-
-Code and documentation copyright 2011-2018 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
